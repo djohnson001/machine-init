@@ -5,9 +5,26 @@ cinst boxstarter -y
 
 BoxStarterShell
 
+#box starter options
 Set-TaskbarOptions -Combine Never -Size Small
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -DisableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableOpenFileExplorerToQuickAccess -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess 
-
 Disable-InternetExplorerESC
 Disable-GameBarTips
 Disable-BingSearch
+
+#browsers
+cinst firefox -y
+cinst chrome -y
+
+#dev stuff
+cinst git -y
+refreshenv
+cinst docker -y
+cinst visualstudiocode -y
+cinst visualstudio2017community -y
+
+
+
+
+
+
